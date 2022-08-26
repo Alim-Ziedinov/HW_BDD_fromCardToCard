@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/17x30s04ipa05tmf/branch/master?svg=true)](https://ci.appveyor.com/project/Alim-Ziedinov/hw-bdd-fromcardtocard/branch/master)
