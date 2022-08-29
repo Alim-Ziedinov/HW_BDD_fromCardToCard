@@ -1,13 +1,21 @@
 package ru.netology.test.Test;
 
+import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.test.data.DataHelper;
 import ru.netology.test.page.LoginPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-public class MoneyTransferTest {
 
+public class MoneyTransferTest {
+    @BeforeEach
+    void setAll(){
+        Configuration.browser = "firefox";
+        Configuration.browserSize = "874x769";
+        Configuration.holdBrowserOpen = true;
+    }
     @Test
     void shouldTransferFromFirstToSecond() {
         var loginPage = open("http://localhost:9999", LoginPage.class);
